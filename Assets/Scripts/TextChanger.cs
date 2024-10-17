@@ -18,6 +18,7 @@ public class TextChanger : MonoBehaviour
     {
         _sequence = DOTween.Sequence();
     }
+
     private void Start()
     {
         _sequence.Append(_text.DOText(_newText, _duration));

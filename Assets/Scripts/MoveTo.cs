@@ -8,7 +8,7 @@ public class MoveTo : MonoBehaviour
     [SerializeField] private LoopType _loopType;
     [SerializeField] private int _repeats;
 
-    private void Start()
+    private void Update()
     {
         transform.DOMove(_position, _duration).SetLoops(_repeats, _loopType);
     }
